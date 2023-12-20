@@ -48,72 +48,74 @@ change if disclosure needs to be coordinated with the reporter or other
 stakeholders.
 
 1. For confirmed security vulnerabilities, we will develop a robust fix as soon
-as possible. During this time, we will only share information with the
-reporter, those needed to develop the fix and Especially Sensitive Stakeholders
-(ESSes). See the :ref:`ts_registration_label` section for more information
-about ESSes and Trusted Stakeholders. If the fix is particularly difficult to
-implement, we may proceed to subsequent steps without a fix.
+   as possible. During this time, we will only share information with the
+   reporter, those needed to develop the fix and Especially Sensitive
+   Stakeholders (ESSes). See the :ref:`ts_registration_label` section for more
+   information about ESSes and Trusted Stakeholders. If the fix is particularly
+   difficult to implement, we may proceed to subsequent steps without a fix.
 
 2. After a robust fix becomes available, our preference is to publicly release
-it as soon as possible. We will automatically do this if the vulnerability is
-already publicly known.
+   it as soon as possible. We will automatically do this if the vulnerability
+   is already publicly known.
 
-Security fixes should contain the minimum information required to fix the bug.
-We will usually publicly disclose the corresponding vulnerability details
-later, on the public disclosure date (see step 5 below).
+   Security fixes should contain the minimum information required to fix the
+   bug. We will usually publicly disclose the corresponding vulnerability
+   details later, on the public disclosure date (see step 5 below).
 
-We may defer public release of the fix if the reporter requests it or we think
-the fix contains enough information for a skilled attacker to re-construct
-the exploit. In this case we will publicly release the fix on the public
-disclosure date. This will not prevent the fix from being shared with ESSes
-and Trusted Stakeholders before public disclosure (but see export control
-restriction below).
+   We may defer public release of the fix if the reporter requests it or we
+   think the fix contains enough information for a skilled attacker to
+   re-construct the exploit. In this case we will publicly release the fix on
+   the public disclosure date. This will not prevent the fix from being shared
+   with ESSes and Trusted Stakeholders before public disclosure (but see export
+   control restriction below).
 
-We may also defer public release of the fix if an ESS requests it within 1
-calendar day of being notified and we agree the criticality of the
-vulnerability requires more time. The ESS requested deferral period should be
-as short as possible, up to 7 calendar days after the fix becomes available,
-with an exceptional extension to 14 calendar days. The only valid reason for
-release deferral is to accommodate deployment of the fix by ESSes. If it is
-immediately clear that ESSes are unaffected by the vulnerability then we will
-skip this stage. This 0-14 day deferral is the primary embargo period.
+   We may also defer public release of the fix if an ESS requests it within 1
+   calendar day of being notified and we agree the criticality of the
+   vulnerability requires more time. The ESS requested deferral period should
+   be as short as possible, up to 7 calendar days after the fix becomes
+   available, with an exceptional extension to 14 calendar days. The only valid
+   reason for release deferral is to accommodate deployment of the fix by
+   ESSes. If it is immediately clear that ESSes are unaffected by the
+   vulnerability then we will skip this stage. This 0-14 day deferral is the
+   primary embargo period.
 
-Due to export control restrictions, some Trusted Firmware projects may not be
-allowed to distribute the fix privately. For such projects, if an ESS requests
-it, we may allow ESSes a reasonable extension to the primary embargo period to
-develop and deploy their own fix. This period should be as short as possible
-and must always allow enough time for Trusted Stakeholders to develop and
-deploy their own fixes before public disclosure.
+   Due to export control restrictions, some Trusted Firmware projects may not
+   be allowed to distribute the fix privately. For such projects, if an ESS
+   requests it, we may allow ESSes a reasonable extension to the primary
+   embargo period to develop and deploy their own fix. This period should be as
+   short as possible and must always allow enough time for Trusted Stakeholders
+   to develop and deploy their own fixes before public disclosure.
 
 3. After the primary embargo period, we will share the fix (where possible)
-and relevant vulnerability information with registered Trusted Stakeholders.
-We may defer fix release further if a Trusted Stakeholder requests it within 3
-working days of being notified (Monday to Friday, in their time zone), and we
-agree the criticality of the vulnerability requires more time. The requested
-deferral period should be as short as possible, up to 7 calendar days after
-the Trusted Stakeholder is notified, with an exceptional extension to 14 days.
-The only valid reason for further release deferral is to accommodate deployment
-of the fix by a Trusted Stakeholder. This further 3-14 day deferral is the
-secondary embargo period.
+   and relevant vulnerability information with registered Trusted Stakeholders.
+   We may defer fix release further if a Trusted Stakeholder requests it within
+   3 working days of being notified (Monday to Friday, in their time zone), and
+   we agree the criticality of the vulnerability requires more time. The
+   requested deferral period should be as short as possible, up to 7 calendar
+   days after the Trusted Stakeholder is notified, with an exceptional
+   extension to 14 days. The only valid reason for further release deferral is
+   to accommodate deployment of the fix by a Trusted Stakeholder. This further
+   3-14 day deferral is the secondary embargo period.
 
-For Trusted Firmware projects that are not allowed to distribute the fix
-privately due to export control restrictions, if a Trusted Stakeholder requests
-it, we may allow Trusted Stakeholders a reasonable extension to the secondary
-embargo period to develop and deploy their own fix. This period should be as
-short as possible and must always complete before the public disclosure date. 
-In this case the fix will be publicly released after the secondary embargo
-period.
+   For Trusted Firmware projects that are not allowed to distribute the fix
+   privately due to export control restrictions, if a Trusted Stakeholder
+   requests it, we may allow Trusted Stakeholders a reasonable extension to the
+   secondary embargo period to develop and deploy their own fix. This period
+   should be as short as possible and must always complete before the public
+   disclosure date. In this case the fix will be publicly released after the
+   secondary embargo period.
 
 4. After fix implementation, we will consolidate details of the security
-vulnerability into a security advisory. This includes a CVE number and we will
-request one if not already done by the reporter. We will circulate drafts of
-the security advisory with the reporter, ESSes and Trusted Stakeholders if they
-contain significant updates to earlier notifications.
+   vulnerability into a security advisory. This includes a CVE number and we
+   will request one if not already done by the reporter. We will circulate
+   drafts of the security advisory with the reporter, ESSes and Trusted
+   Stakeholders if they contain significant updates to earlier notifications.
 
 5. At the agreed public disclosure date, by default 90 days after the
-vulnerability was reported, we will publicize the final security advisory and
-fix (if not already available) at https://www.trustedfirmware.org/security. This
-window from reporting to public disclosure is the public embargo period.
+   vulnerability was reported, we will publicize the final security advisory
+   and fix (if not already available) at
+   https://www.trustedfirmware.org/security. This window from reporting to
+   public disclosure is the public embargo period.
 
 .. _embargoed_info_label:
 
@@ -155,19 +157,19 @@ following information:
 1. Which Trusted Firmware project(s) you want to register for.
 
 2. A justification of why you should be on the list. That is, why you should
-know about security vulnerabilities and have access to security fixes before
-they are made public. For example, a valid reason is that your organization
-has deployed products using Trusted Firmware that may need to be patched.
+   know about security vulnerabilities and have access to security fixes before
+   they are made public. For example, a valid reason is that your organization
+   has deployed products using Trusted Firmware that may need to be patched.
 
 3. Your full name and a valid email address. This should be an organization
-email address where possible. We prefer individuals in each organization t
-coordinate their registration requests with each other and to provide us with
-an email alias managed by your organization instead of us managing a long list
-of individual addresses.
+   email address where possible. We prefer individuals in each organization to
+   coordinate their registration requests with each other and to provide us
+   with an email alias managed by your organization instead of us managing a
+   long list of individual addresses.
 
 4. Confirmation that you and the individuals in your organization will handle 
-embargoed information responsibly as described in the
-:ref:`embargoed_info_label` section.
+   embargoed information responsibly as described in the
+   :ref:`embargoed_info_label` section.
 
 Where applicable, the project security teams also maintain an
 **E**specially **S**ensitive **S**takeholder (**ESS**) list. This list is
