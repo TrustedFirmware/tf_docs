@@ -156,7 +156,9 @@ may be merged.
 
 In case of disagreement between the different parties involved in the review,
 leading to a stalemate situation where the patch cannot progress further,
-a third-party maintainer should be contacted to settle the case.
+a third-party maintainer should be contacted to settle the case. As a last
+resort, the disagreement may be escalated to the TSC (TrustedFirmware.org
+Steering Committee).
 
 It is important to note that the patch author is responsible for driving their
 review. In particular, they should not expect that people will review their
@@ -294,10 +296,6 @@ purpose. They are listed below for completeness.
   (or reusing existing ones if the license is compatible) to assist developers
   (for example suggesting specific code owners or maintainers based on the
   nature of the patch).
-* For both TF-A and TF-M, the CI system is not quite ready to be extended by
-  the community. Thus, some of the guidelines around adding the required level
-  of testing in the CI cannot be applied right now. We hope the situation will
-  quickly evolve, which is why it's been included in this document nonetheless.
 * In the future this document might be expanded to address multi-branch
   maintainership.
 
