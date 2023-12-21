@@ -38,36 +38,36 @@ Triage
 1. New incident comes into security@lists.trustedfirmware.org.
 
 2. Someone on security@lists.trustedfirmware.org replies to the list
-as soon as possible to say they will be the triager for the incident. This
-should preferably be the representative for the relevant project but can be
-another member. 
+   as soon as possible to say they will be the triager for the incident. This
+   should preferably be the representative for the relevant project but can be
+   another member. 
 
 3. The triager analyses the incident as soon as possible and always within 3
-working days (Monday to Friday in their timezone) of the initial report.
+   working days (Monday to Friday in their timezone) of the initial report.
 
-  a. If the incident is obviously not a security vulnerability, the triager
-  rejects it, giving the standard rejection response to the reporter with
-  specific rejection reasoning.
+   a. If the incident is obviously not a security vulnerability, the triager
+      rejects it, giving the standard rejection response to the reporter with
+      specific rejection reasoning.
 
-  b. Otherwise the triager accepts the incident, giving the standard holding
-  response to the reporter. They forward the incident to the appropriate
-  *<project>-security@lists.trustedfirmware.org* if not done already.
+   b. Otherwise the triager accepts the incident, giving the standard holding
+      response to the reporter. They forward the incident to the appropriate
+      *<project>-security@lists.trustedfirmware.org* if not done already.
 
-  In some cases the incident may affect more than one project; in such cases
-  the triager should act as the reporter's point of contact for the incident.
-  If the incident only affects one project, the project incident handler
-  (see below) is the point of contact. If the relevant project(s) are not
-  clear then the triager pulls in other members of
-  security@lists.trustedfirmware.org or the project security teams
-  as appropriate until this is determined.
+   In some cases the incident may affect more than one project; in such cases
+   the triager should act as the reporter's point of contact for the incident.
+   If the incident only affects one project, the project incident handler
+   (see below) is the point of contact. If the relevant project(s) are not
+   clear then the triager pulls in other members of
+   security@lists.trustedfirmware.org or the project security teams
+   as appropriate until this is determined.
     
 4. The triager is responsible for ensuring the relevant project security team
-is handling the process as defined here in a timely manner. They should also
-act as the reporter's backup point of contact if the project security team is
-not functioning properly.
+   is handling the process as defined here in a timely manner. They should also
+   act as the reporter's backup point of contact if the project security team
+   is not functioning properly.
 
 5. The other members of security@lists.trustedfirmware.org are responsible for
-picking up the duties of the triager if the triager becomes unavailable.
+   picking up the duties of the triager if the triager becomes unavailable.
 
 
 Project handling
@@ -78,62 +78,64 @@ Project handling
 1. New incident comes into *<project>-security@lists.trustedfirmware.org*.
 
 2. Someone on *<project>-security@lists.trustedfirmware.org* immediately
-replies to the list to say they will be the project incident handler.
+   replies to the list to say they will be the project incident handler.
 
 3. The project incident handler analyses the incident as soon as possible and
-always within 7 days of receipt. They create a new "security-incident" in the
-project's issue tracker. They may pull in other project security team members
-or trusted contributors to the project to help with the analysis but access to
-this information must be restricted to this group.
+   always within 7 days of receipt. They create a new "security-incident" in
+   the project's issue tracker. They may pull in other project security team
+   members or trusted contributors to the project to help with the analysis but
+   access to this information must be restricted to this group.
 
-  a. If the incident is deemed not a security vulnerability^^, the project
-  incident handler rejects it, giving the standard rejection response to the
-  reporter with specific rejection reasoning. If the incident is a normal bug,
-  the project incident handler reports one via the project's normal bug
-  reporting process. They close the "security-incident" task.
+   a. If the incident is deemed not a security vulnerability^^, the project
+      incident handler rejects it, giving the standard rejection response to
+      the reporter with specific rejection reasoning. If the incident is a
+      normal bug, the project incident handler reports one via the project's
+      normal bug reporting process. They close the "security-incident" task.
 
-  b. Otherwise the project incident handler accepts the incident is (or may be)
-  a security vulnerability and proceeds to the next stage.
+   b. Otherwise the project incident handler accepts the incident is (or may
+      be) a security vulnerability and proceeds to the next stage.
 
 4. The project incident handler consolidates the information gathered on the
-(potential) vulnerability so far and shares that information with the
-reporter^^^ and *<project>-ess-notify@lists.trustedfirmware.org* (if applicable
-to project). As part of this communication, it's possible that the (potential)
-vulnerability is downgraded to a normal bug. For confirmed vulnerabilities,
-the project incident handler arranges for someone to fix the vulnerability and
-as a lower priority, someone to begin drafting a security advisory. They must
-ensure that any sensitive information^ the reporter provides is stripped out
-before communication outside the security teams. They should also request a CVE
-from Mitre at this stage if not already done by the reporter.
+   (potential) vulnerability so far and shares that information with the
+   reporter^^^ and *<project>-ess-notify@lists.trustedfirmware.org* (if
+   applicable to project). As part of this communication, it's possible that
+   the (potential) vulnerability is downgraded to a normal bug. For confirmed
+   vulnerabilities, the project incident handler arranges for someone to fix
+   the vulnerability and as a lower priority, someone to begin drafting a
+   security advisory. They must ensure that any sensitive information^ the
+   reporter provides is stripped out before communication outside the security
+   teams. They should also request a CVE from Mitre at this stage if not
+   already done by the reporter.
 
 5. The project incident handler is responsible for negotiating
-embargo/disclosure timelines with the reporter^^^ and stakeholders, and keeping
-them informed throughout the remainder of the process. Triggers for new updates
-include: new vulnerability fix available, new advisory draft available,
-fix/advisory becoming public, vulnerability status change (e.g. severity
-changed, new exploit found, change in disclosure plan, ...).
+   embargo/disclosure timelines with the reporter^^^ and stakeholders, and
+   keeping them informed throughout the remainder of the process. Triggers for
+   new updates include: new vulnerability fix available, new advisory draft
+   available, fix/advisory becoming public, vulnerability status change (e.g.
+   severity changed, new exploit found, change in disclosure plan, ...).
 
 6. After a fix for the vulnerability is available, the project incident handler
-shares the fix with the reporter^^^ and
-*<project>-ess-notify@trustedfirmware.org* via email (unless the projects is
-not allowed to distribute the fix due to export control restrictions). If an
-embargo is agreed with an ESS, the primary embargo period starts.
+   shares the fix with the reporter^^^ and
+   *<project>-ess-notify@trustedfirmware.org* via email (unless the projects
+   is not allowed to distribute the fix due to export control restrictions). If
+   an embargo is agreed with an ESS, the primary embargo period starts.
 
 7. After the primary embargo period (if applicable) ends, the project incident
-handler notifies
-*<project>-trusted-stakeholder-notify@lists.trustedfirmware.org* with the
-latest information and keeps them informed throughout the remainder of the
-process. The secondary embargo period starts.
+   handler notifies
+   *<project>-trusted-stakeholder-notify@lists.trustedfirmware.org* with the
+   latest information and keeps them informed throughout the remainder of the
+   process. The secondary embargo period starts.
 
 8. When the secondary embargo period ends, the project incident handler
-arranges for the vulnerability fix to be made public (unless public fix release
-is deferred - see :doc:`incident_handling_process`.
+   arranges for the vulnerability fix to be made public (unless public fix
+   release is deferred - see :doc:`incident_handling_process`.
 
 9. The project incident handler circulates drafts of the security advisory with
-the reporter, ESSes and Trusted Stakeholders as they become available.
+   the reporter, ESSes and Trusted Stakeholders as they become available.
 
 10. When the public embargo period ends, the project incident handler arranges
-for the advisory (and vulnerability fix if not done before) to be made public.
+    for the advisory (and vulnerability fix if not done before) to be made
+    public.
 
 
 ^ By default, sensitive information includes the reporter's identity, their

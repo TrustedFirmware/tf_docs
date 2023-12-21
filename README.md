@@ -5,7 +5,7 @@ embedded within the http://trustedfirmware.org website.
 
 Although GitHub renders `*.rst` files reasonably well, this documentation
 should be rendered using Sphinx. The latest rendered version can be found at
-https://tfdocs.readthedocs.io.
+https://trusted-firmware-docs.readthedocs.io.
 
 ## Building locally
 This documentation can be built using the simple command `make html`. It has
