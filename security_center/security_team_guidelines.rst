@@ -86,7 +86,7 @@ Project handling
    members or trusted contributors to the project to help with the analysis but
    access to this information must be restricted to this group.
 
-   a. If the incident is deemed not a security vulnerability^^, the project
+   a. If the incident is deemed not a security vulnerability [#f1]_, the project
       incident handler rejects it, giving the standard rejection response to
       the reporter with specific rejection reasoning. If the incident is a
       normal bug, the project incident handler reports one via the project's
@@ -97,25 +97,25 @@ Project handling
 
 4. The project incident handler consolidates the information gathered on the
    (potential) vulnerability so far and shares that information with the
-   reporter^^^ and *<project>-ess-notify@lists.trustedfirmware.org* (if
+   reporter [#f2]_ and *<project>-ess-notify@lists.trustedfirmware.org* (if
    applicable to project). As part of this communication, it's possible that
    the (potential) vulnerability is downgraded to a normal bug. For confirmed
    vulnerabilities, the project incident handler arranges for someone to fix
    the vulnerability and as a lower priority, someone to begin drafting a
-   security advisory. They must ensure that any sensitive information^ the
+   security advisory. They must ensure that any sensitive information [#f3]_ the
    reporter provides is stripped out before communication outside the security
    teams. They should also request a CVE from Mitre at this stage if not
    already done by the reporter.
 
 5. The project incident handler is responsible for negotiating
-   embargo/disclosure timelines with the reporter^^^ and stakeholders, and
+   embargo/disclosure timelines with the reporter [#f2]_ and stakeholders, and
    keeping them informed throughout the remainder of the process. Triggers for
    new updates include: new vulnerability fix available, new advisory draft
    available, fix/advisory becoming public, vulnerability status change (e.g.
    severity changed, new exploit found, change in disclosure plan, ...).
 
 6. After a fix for the vulnerability is available, the project incident handler
-   shares the fix with the reporter^^^ and
+   shares the fix with the reporter [#f2]_ and
    *<project>-ess-notify@trustedfirmware.org* via email (unless the projects
    is not allowed to distribute the fix due to export control restrictions). If
    an embargo is agreed with an ESS, the primary embargo period starts.
@@ -138,14 +138,19 @@ Project handling
     public.
 
 
-^ By default, sensitive information includes the reporter's identity, their
-organization and their organization's product information. The reporter may
-specify other sensitive information.
+.. rubric:: Footnotes
 
-^^ Each project may have its own process for determining this. This may include
-a threat model, severity scoring of the bug and a bug bar for determining
-which bugs should be treated as security vulnerabilities. For projects that
-use severity scoring, CVSSv3 is preferred to align with Mitre CVEs.
+.. [#f1]
+   Each project may have its own process for determining this. This may include
+   a threat model, severity scoring of the bug and a bug bar for determining
+   which bugs should be treated as security vulnerabilities. For projects that
+   use severity scoring, CVSSv3 is preferred to align with Mitre CVEs.
 
-^^^ Or triager for incidents that affect multiple projects since they are the
-point of contact.
+.. [#f2]
+   By default, sensitive information includes the reporter's identity, their
+   organization and their organization's product information. The reporter may
+   specify other sensitive information.
+
+.. [#f3]
+   Or triager for incidents that affect multiple projects since they are the
+   point of contact.

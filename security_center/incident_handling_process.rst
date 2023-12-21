@@ -113,9 +113,9 @@ stakeholders.
 
 5. At the agreed public disclosure date, by default 90 days after the
    vulnerability was reported, we will publicize the final security advisory
-   and fix (if not already available) at
-   https://www.trustedfirmware.org/security. This window from reporting to
-   public disclosure is the public embargo period.
+   and fix (if not already available) at https://www.trustedfirmware.org.
+   This window from reporting to public disclosure is the public embargo
+   period.
 
 .. _embargoed_info_label:
 
@@ -172,7 +172,7 @@ following information:
    :ref:`embargoed_info_label` section.
 
 Where applicable, the project security teams also maintain an
-**E**specially **S**ensitive **S**takeholder (**ESS**) list. This list is
+**E**\ specially **S**\ ensitive **S**\ takeholder (**ESS**) list. This list is
 strictly limited to those organizations that use Trusted Firmware for large
 scale deployments providing bare-metal access on multi-tenancy systems, and
 organizations that supply Trusted Firmware to such deployments. You may use
