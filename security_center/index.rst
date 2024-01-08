@@ -7,6 +7,7 @@ Trusted Firmware Security Center
    incident_handling_process
    mailing_aliases
    security_team_guidelines
+   faq
 
 Project links
 -------------
