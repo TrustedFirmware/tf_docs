@@ -1,8 +1,5 @@
-Frequently Asked Questions
-==========================
-
-Security issues
----------------
+Security Center Frequently Asked Questions
+==========================================
 
 Q: Unauthenticated Jenkins Server
 *********************************
@@ -20,20 +17,9 @@ Q: Unauthenticated Jenkins Server
 
 Q: I found a security issue in product X, will you fix it?
 **********************************************************
-   - If the product uses source code from TrustedFirmware's open source
-     projects, then yes. However, if the product was made by a third party who
-     built on TrustedFirmware technologies but modified the source code, we
-     recommend contacting the company behind the product instead. Ideally, they
-     should fix their product and provide updates to the corresponding upstream
-     tree if the issue affects open and upstream code. In this case, we believe
-     that the company behind the product interacts directly with the
-     TrustedFirmware security incident team as well.
-
-
-Bug bounty
-----------
-
-.. _bug_bounty:
+   - If the product uses source code from TrustedFirmware's open source projects
+     as is, then yes. Regardless we always recommend to also invoke the PSIRT
+     team at the company behind the product as well.
 
 Q: Do you have a bug bounty program?
 ************************************
@@ -45,14 +31,10 @@ Q: Do you have a bug bounty program?
      resources, hardware and infrastructure. Due to all work being done in the
      open, we believe security incident work should be treated the same, but of
      course with the difference that reporting is following the process as
-     described in the :ref:`psirt_process`.
-
-
-Q: I reported a security issue, how do I get my bounty?
-*******************************************************
-   - Please see :ref:`bug_bounty`.
+     described in the :doc:`incident_handling_process`.
 
 Q: I found a security issue, but will only let you know if you pay me.
 **********************************************************************
-   - Unfortunately, we cannot do much. TrustedFirmware runs open source projects
-     and relies on contributions as described here :ref:`bug_bounty`.
+   - Unfortunately, we are unable to handle requests like this. TrustedFirmware
+     runs open source projects as described in the previous question in this
+     FAQ.
