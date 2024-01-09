@@ -8,6 +8,11 @@ Trusted Firmware Security Center
    mailing_aliases
    security_team_guidelines
 
+.. toctree::
+   :maxdepth: 1
+
+   security_center_faq
+
 Project links
 -------------
 * `OP-TEE <https://optee.readthedocs.io/en/latest/general/contact.html#vulnerability-reporting>`__
