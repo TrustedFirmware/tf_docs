@@ -19,4 +19,4 @@ Project links
 * `TF-A <https://trustedfirmware-a.readthedocs.io/en/latest/process/security.html>`__
 * `TF-M <https://tf-m-user-guide.trustedfirmware.org/security/index.html>`__
 * `MCUboot <https://github.com/mcu-tools/mcuboot/security/policy>`__
-* :doc:`Mbed TLS <mbed_tls_security_center>`
+* `Mbed TLS <https://mbed-tls.readthedocs.io/en/latest/project/vulnerabilities/>`__
