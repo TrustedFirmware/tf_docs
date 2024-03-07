@@ -5,4 +5,5 @@ Trusted Firmware Documentation
    :maxdepth: 2
 
    security_center/index
+   general_information/index
    generic_processes/index
