@@ -9,6 +9,7 @@ that may be used directly:
 * **OP-TEE** : op-tee-security@lists.trustedfirmware.org
 * **Trusted-Firmware-A** : tf-a-security@lists.trustedfirmware.org
 * **Trusted-Firmware-M** : tf-m-security@lists.trustedfirmware.org
+* **MCUboot** : mcuboot-security@lists.trustedfirmware.org
 * **Mbed TLS** : mbed-tls-security@lists.trustedfirmware.org
 
 If you choose to encrypt your report, the same
