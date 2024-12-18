@@ -58,6 +58,8 @@ stakeholders.
    Stakeholders (ESSes). See the :ref:`ts_registration_label` section for more
    information about ESSes and Trusted Stakeholders. If the fix is particularly
    difficult to implement, we may proceed to subsequent steps without a fix.
+   The fix will include backports to live Long Term Stable (LTS) branches,
+   though delivery of those backports may be deferred until they are required.
 
 2. After a robust fix becomes available, our preference is to publicly release
    it as soon as possible. We will automatically do this if the vulnerability
