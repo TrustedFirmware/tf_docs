@@ -4,14 +4,19 @@ Security Incident Handling Process
 Reporting
 ---------
 
-If you think you have found a security vulnerability, then please send an email
-to the Trusted Firmware security team at security@lists.trustedfirmware.org.
-You may also use the project specific security team aliases
-:doc:`here <mailing_aliases>`. These are private teams of security officers
-who will help verify the security vulnerability, develop and release a fix,
-and disclose the vulnerability details responsibly. The security teams are
-referred to from now on as "us/we/our". We do our best to respond and fix any
-issues as soon as possible.
+If you think you have found a security vulnerability in Trusted Firmware
+infrastructure, then please follow the
+`Linaro security policy <https://www.linaro.org/vdp>`__
+and ignore the rest of this process.
+
+If you think you have found a security vulnerability in Trusted Firmware
+projects then please send an email to the Trusted Firmware security team at
+security@lists.trustedfirmware.org. You may also use the project specific
+security team aliases :doc:`here <mailing_aliases>`. These are private teams of
+security officers who will help verify the security vulnerability, develop and
+release a fix, and disclose the vulnerability details responsibly. The security
+teams are referred to from now on as "us/we/our". We do our best to respond and
+fix any issues as soon as possible.
 
 As with any bug, the more information you provide, the easier it is to diagnose
 and fix. If you already have a fix, please include it with your report, as that
