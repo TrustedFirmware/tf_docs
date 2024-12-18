@@ -48,9 +48,16 @@ and direct the bug to the normal bug fixing process.
 
 Disclosure
 ----------
-Our default security vulnerability disclosure plan is as follows. This may
-change if disclosure needs to be coordinated with the reporter or other
-stakeholders.
+Our default security vulnerability disclosure plan is shown in the figure below:
+
+.. figure:: images/tf_security_incident_process.png
+   :alt: Trusted Firmware security incident handling process
+   :scale: 80%
+
+   Trusted Firmware security incident handling process
+
+The detailed steps are as follows. This may change if disclosure needs to be
+coordinated with the reporter or other stakeholders.
 
 1. For confirmed security vulnerabilities, we will develop a robust fix as soon
    as possible. During this time, we will only share information with the
