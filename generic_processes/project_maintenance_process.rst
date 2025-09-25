@@ -3,7 +3,7 @@ Trusted Firmware Project Maintenance Process
 
 Goal of this document
 ---------------------
-As the developer community at http://trustedfirmware.org is growing, there is
+As the developer community at https://trustedfirmware.org is growing, there is
 an increasing need to have work processes that are clearly documented, feel
 smooth and scale well. The aim of this document is to define a set of rules,
 guidelines and processes to try and improve the way we work together as a
@@ -21,7 +21,7 @@ more transparent, while reducing potential frictions and frustration that can
 arise in the community.
 
 This document applies to the TF-A and TF-M projects currently but might be
-extended to other http://trustedfirmware.org projects in the future.
+extended to other https://trustedfirmware.org projects in the future.
 
 Definitions of roles, rights and responsibilities
 -------------------------------------------------
@@ -255,7 +255,7 @@ Deprecated platforms may be removed from the codebase in future.
 Per-project guidelines
 ----------------------
 This document outlines the general expectations for all
-http://trustedfirmware.org projects. In most cases, projects would typically
+https://trustedfirmware.org projects. In most cases, projects would typically
 extend and/or refine these in a complementary document.
 
 Such project guidelines would typically cover the following topics (this list
