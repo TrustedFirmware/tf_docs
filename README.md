@@ -10,3 +10,5 @@ https://trusted-firmware-docs.readthedocs.io.
 ## Building locally
 This documentation can be built using the simple command `make html`. It has
 been tested on Xubuntu LTS 22.04 using Sphinx 7.2.6.
+
+TEST CHANGE - DO NOT MERGE
