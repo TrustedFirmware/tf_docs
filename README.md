@@ -1,11 +1,11 @@
 # Trusted Firmware Documentation
 This project is the home for all Trusted Firmware documentation that is not
 included in any of the Trusted Firmware projects' documentation or directly
-embedded within the http://trustedfirmware.org website.
+embedded within the https://trustedfirmware.org website.
 
 Although GitHub renders `*.rst` files reasonably well, this documentation
 should be rendered using Sphinx. The latest rendered version can be found at
-https://trusted-firmware-docs.readthedocs.io.
+https://general.docs.trustedfirmware.org.
 
 ## Building locally
 This documentation can be built using the simple command `make html`. It has
