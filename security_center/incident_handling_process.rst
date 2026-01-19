@@ -5,9 +5,9 @@ Reporting
 ---------
 
 If you think you have found a security vulnerability in Trusted Firmware
-infrastructure, then please follow the
-`Linaro security policy <https://www.linaro.org/vdp>`__
-and ignore the rest of this process.
+**infrastructure** (e.g. the website), then please follow the
+`Linaro security policy <https://www.linaro.org/vdp>`__ and ignore the rest of
+this process.
 
 If you think you have found a security vulnerability in Trusted Firmware
 projects then please send an email to the Trusted Firmware security team at
