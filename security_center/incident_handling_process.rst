@@ -18,6 +18,12 @@ release a fix, and disclose the vulnerability details responsibly. The security
 teams are referred to from now on as "us/we/our". We do our best to respond and
 fix any issues as soon as possible.
 
+Only security issues affecting platform-independent code are in scope. If the
+security issue entirely lies in platform-specific code or code that is only used
+by a single platform, we recommend to report it to the relevant platform owners
+and their Product Security Incident Response Teams (PSIRT) directly. If we
+receive such reports, we reserve the right to forward them ourselves.
+
 As with any bug, the more information you provide, the easier it is to diagnose
 and fix. If you already have a fix, please include it with your report, as that
 can speed up the process considerably. Any exploit code is very helpful. We may
