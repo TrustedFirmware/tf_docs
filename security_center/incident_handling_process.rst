@@ -18,6 +18,10 @@ release a fix, and disclose the vulnerability details responsibly. The security
 teams are referred to from now on as "us/we/our". We do our best to respond and
 fix any issues as soon as possible.
 
+IP security issues are out of scope of this process. Depending on the type of
+IP, please contact Arm PSIRT, your Arm account manager or the IP vendor's PSIRT
+(for non-Arm IP) to report such issues.
+
 Only security issues affecting platform-independent code are in scope. If the
 security issue entirely lies in platform-specific code or code that is only used
 by a single platform, we recommend to report it to the relevant platform owners
