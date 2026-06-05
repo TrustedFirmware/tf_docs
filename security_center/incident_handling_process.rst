@@ -10,7 +10,16 @@ If you think you have found a security vulnerability in Trusted Firmware
 this process.
 
 If you think you have found a security vulnerability in Trusted Firmware
-projects then please send an email to the Trusted Firmware security team at
+projects and that it is in scope of our bug bounty program, then please feel
+free to report it through the `Intigriti
+<https://app.intigriti.com/programs/arm/trustedfirmware/detail>`__ platform (be
+sure to read the participation guidelines and scope details there before
+submitting your report).
+
+The rest of this document focuses on how to report a security vulnerability in
+Trusted Firmware projects **outside** of the bug bounty program.
+
+Please send an email to the Trusted Firmware security team at
 security@lists.trustedfirmware.org. You may also use the project specific
 security team aliases :doc:`here <mailing_aliases>`. These are private teams of
 security officers who will help verify the security vulnerability, develop and
