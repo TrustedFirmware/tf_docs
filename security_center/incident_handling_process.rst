@@ -18,6 +18,11 @@ release a fix, and disclose the vulnerability details responsibly. The security
 teams are referred to from now on as "us/we/our". We do our best to respond and
 fix any issues as soon as possible.
 
+Arm separately runs a bug bounty program for Trusted Firmware projects via the
+`Intigriti <https://app.intigriti.com/programs/arm/trustedfirmware/detail>`__
+platform. If you are eligible and your vulnerability is in scope, you may submit
+your report there instead of using this process.
+
 IP security issues are out of scope of this process. Depending on the type of
 IP, please contact Arm PSIRT, your Arm account manager or the IP vendor's PSIRT
 (for non-Arm IP) to report such issues.
