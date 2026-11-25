@@ -1,10 +1,8 @@
 Security Team Mailing Aliases
 =============================
 
-All security vulnerabilities may be reported to
-security@lists.trustedfirmware.org. They will be forwarded to the appropriate
-project security teams(s). Alternatively, there are project specific aliases
-that may be used directly:
+All security vulnerabilities should be reported to one or more of the project
+security team aliases listed below:
 
 * **OP-TEE** : op-tee-security@lists.trustedfirmware.org
 * **Trusted-Firmware-A** : tf-a-security@lists.trustedfirmware.org

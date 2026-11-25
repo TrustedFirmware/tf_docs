@@ -10,18 +10,12 @@ If you think you have found a security vulnerability in Trusted Firmware
 this process.
 
 If you think you have found a security vulnerability in Trusted Firmware
-projects then please send an email to the Trusted Firmware security team at
-security@lists.trustedfirmware.org. You may also use the project specific
-security team aliases :doc:`here <mailing_aliases>`. These are private teams of
-security officers who will help verify the security vulnerability, develop and
-release a fix, and disclose the vulnerability details responsibly. The security
-teams are referred to from now on as "us/we/our". We do our best to respond and
-fix any issues as soon as possible.
-
-Arm separately runs a bug bounty program for Trusted Firmware projects via the
-`Intigriti <https://app.intigriti.com/programs/arm/trustedfirmware/detail>`__
-platform. If you are eligible and your vulnerability is in scope, you may submit
-your report there instead of using this process.
+projects then please send an email to one or more of the relevant project
+specific security team aliases :doc:`here <mailing_aliases>`. These are private
+teams of security officers who will help verify the security vulnerability,
+develop and release a fix, and disclose the vulnerability details responsibly.
+The security teams are referred to from now on as "us/we/our". We do our best
+to respond and fix any issues as soon as possible.
 
 IP security issues are out of scope of this process. Depending on the type of
 IP, please contact Arm PSIRT, your Arm account manager or the IP vendor's PSIRT
@@ -34,18 +28,17 @@ and their Product Security Incident Response Teams (PSIRT) directly. If we
 receive such reports, we reserve the right to forward them ourselves.
 
 As with any bug, the more information you provide, the easier it is to diagnose
-and fix. If you already have a fix, please include it with your report, as that
-can speed up the process considerably. Any exploit code is very helpful. We may
-bring in extra help from area maintainers to understand and fix the
-vulnerability.
+and fix. We encourage you to provide a fix and to include the relevant code
+owners in the report, as that can speed up the process considerably. Any
+exploit code is very helpful. We may bring in extra help to understand and
+fix the vulnerability.
 
 Please let us know your disclosure plans if you have any. This may affect our
 disclosure plan as described in the next section.
 
 Please indicate any sensitive information you do not wish us to share. We
 reserve the right to share any information you provide with trusted third
-parties and eventually the public unless you request otherwise. We will credit
-you in any security advisory unless you request otherwise.
+parties and eventually the public unless you request otherwise.
 
 You may use :download:`this PGP/GPG key <pub_security_at_trustedfirmware_subkeys_3.asc>`
 for encrypting the vulnerability information. This key is also available at
@@ -76,96 +69,64 @@ coordinated with the reporter or other stakeholders.
 
 1. For confirmed security vulnerabilities, we will develop a robust fix as soon
    as possible. During this time, we will only share information with the
-   reporter, those needed to develop the fix and Especially Sensitive
-   Stakeholders (ESSes). See the :ref:`ts_registration_label` section for more
-   information about ESSes and Trusted Stakeholders. If the fix is particularly
-   difficult to implement, we may proceed to subsequent steps without a fix.
-   The fix will include backports to live Long Term Stable (LTS) branches,
-   though delivery of those backports may be deferred until they are required.
+   reporter and those needed to develop the fix.
+
+   The fix will include backports to active Long Term Stable (LTS) branches,
+   though delivery of some backports may be deferred until they are required
+   to avoid delaying disclosure and deployment of the fix.
+
+   Security fixes will contain the minimum information required to fix the
+   bug. Any additional vulnerability details will be published later, in step
+   4 below.
 
 2. After a robust fix becomes available, our preference is to publicly release
    it as soon as possible. We will automatically do this if the vulnerability
-   is already publicly known.
+   is already publicly known. Otherwise, we will share the fix and relevant
+   vulnerability information with
+   :ref:`registered Trusted Stakeholders (TS) <ts_registration_label>`. We may
+   batch multiple vulnerabilities into a single notification.
 
-   Security fixes should contain the minimum information required to fix the
-   bug. We will usually publicly disclose the corresponding vulnerability
-   details later, on the public disclosure date (see step 5 below).
-
-   We may defer public release of the fix if the reporter requests it or we
-   think the fix contains enough information for a skilled attacker to
-   re-construct the exploit. In this case we will publicly release the fix on
-   the public disclosure date. This will not prevent the fix from being shared
-   with ESSes and Trusted Stakeholders before public disclosure (but see export
-   control restriction below).
-
-   We may also defer public release of the fix if an ESS requests it within 1
-   calendar day of being notified and we agree the criticality of the
-   vulnerability requires more time. The ESS requested deferral period should
-   be as short as possible, up to 7 calendar days after the fix becomes
-   available, with an exceptional extension to 14 calendar days. The only valid
-   reason for release deferral is to accommodate deployment of the fix by
-   ESSes. If it is immediately clear that ESSes are unaffected by the
-   vulnerability then we will skip this stage. This 0-14 day deferral is the
-   primary embargo period.
+   We may embargo the fix if a TS requests it within 3 working days of being
+   notified (Monday to Friday, in their time zone), and we agree the
+   criticality of the vulnerability requires more time for fix deployment. The
+   requested embargo period should be as short as possible, up to 7 calendar
+   days after the TS receives the fix, with an exceptional extension to 14
+   days. The only valid reason for requesting an embargo is to enable the TS
+   to deploy the fix. If the fix requires further refinement during the embargo
+   period, then the fix embargo period will restart.
 
    Due to export control restrictions, some Trusted Firmware projects may not
-   be allowed to distribute the fix privately. For such projects, if an ESS
-   requests it, we may allow ESSes a reasonable extension to the primary
-   embargo period to develop and deploy their own fix. This period should be as
-   short as possible and must always allow enough time for Trusted Stakeholders
-   to develop and deploy their own fixes before public disclosure.
+   be allowed to distribute the fix privately. For such projects, there is no
+   fix embargo period, but we will notify TS of the vulnerability ahead of
+   public release, to enable them to prepare for fix deployment.
 
-3. After the primary embargo period, we will share the fix (where possible)
-   and relevant vulnerability information with registered Trusted Stakeholders.
-   We may defer fix release further if a Trusted Stakeholder requests it within
-   3 working days of being notified (Monday to Friday, in their time zone), and
-   we agree the criticality of the vulnerability requires more time. The
-   requested deferral period should be as short as possible, up to 7 calendar
-   days after the Trusted Stakeholder is notified, with an exceptional
-   extension to 14 days. The only valid reason for further release deferral is
-   to accommodate deployment of the fix by a Trusted Stakeholder. This further
-   3-14 day deferral is the secondary embargo period.
+3. We will release the fix publicly to mainline and affected LTS branches.
 
-   For Trusted Firmware projects that are not allowed to distribute the fix
-   privately due to export control restrictions, if a Trusted Stakeholder
-   requests it, we may allow Trusted Stakeholders a reasonable extension to the
-   secondary embargo period to develop and deploy their own fix. This period
-   should be as short as possible and must always complete before the public
-   disclosure date. In this case the fix will be publicly released after the
-   secondary embargo period.
+4. After fix is released, we will publish a corresponding CVE. Some projects
+   may also publish a security advisory. We may choose to batch these
+   CVE/advisory publications, for example on a fixed schedule or at release
+   time.
 
-4. After fix implementation, we will consolidate details of the security
-   vulnerability into a security advisory. This includes a CVE number and we
-   will request one if not already done by the reporter. We will circulate
-   drafts of the security advisory with the reporter, ESSes and Trusted
-   Stakeholders if they contain significant updates to earlier notifications.
-
-5. At the agreed public disclosure date, by default 90 days after the
-   vulnerability was reported, we will publicize the final security advisory
-   and fix (if not already available) at https://www.trustedfirmware.org.
-   This window from reporting to public disclosure is the public embargo
-   period.
+   We aim to complete this process as soon as possible and no later than 90
+   days after the vulnerability was first reported.
 
 .. _embargoed_info_label:
 
-Handling embargoed information
-------------------------------
+Handling embargoed (non-public) information
+-------------------------------------------
 On receipt of embargoed information, you must not disclose any of the provided
 information beyond the group of people in your organization that need to know
-about it. During the primary and secondary embargo periods, that group of
-people should be limited to those entrusted to assess the impact of the
-vulnerability on your organization and deploy fixes to your products. After
-the secondary embargo period but during the public embargo period, that group
-of people may be expanded in order to prepare your organization's public
-response. The embargoed information must not be shared outside your
-organization during the public embargo period under any circumstances. It is
-permitted to point others to a public fix during an embargo period, as long as
-the vulnerability details are not leaked.
+about it. During any fix embargo period, that group of people should be limited
+to those entrusted to assess the impact of the vulnerability on your
+organization and deploy fixes to your products. After the the fix is public,
+that group of people may be expanded in order to prepare your organization's
+public response. Embargoed information must not be shared outside your
+organization under any circumstances.
 
-If you think another individual/organization requires access to the embargoed
+If you think another individual/organization requires access to embargoed
 information, then please ask them to :ref:`register <ts_registration_label>`
-as a Trusted Stakeholder. If you believe there has been a leak of embargoed
-information then please notify us immediately.
+as a TS. If you believe there has been a leak of embargoed information then
+please notify us immediately.
 
 We welcome feedback on embargoed information at any time.
 
@@ -175,13 +136,13 @@ Trusted Stakeholder registration
 --------------------------------
 The security team of each Trusted Firmware project maintains a private, vetted
 list of organizations and individuals who are considered Trusted Stakeholders
-of security vulnerabilities for that project. Trusted Stakeholders are
-organizations impacted by security vulnerabilities found in a Trusted Firmware
-project and thus need to be informed before public disclosure.
+(TS) of security vulnerabilities for that project. TS are organizations
+impacted by security vulnerabilities found in a Trusted Firmware project and
+thus need to be informed before public disclosure.
 
-If you want to register as a Trusted Stakeholder, please contact the relevant
-security team alias(es) as listed :doc:`here <mailing_aliases>`, providing the
-following information:
+If you want to register as a TS, and the project support's the TS process,
+please contact the relevant project security team alias(es) as listed
+:doc:`here <mailing_aliases>`, providing the following information:
 
 1. Which Trusted Firmware project(s) you want to register for.
 
@@ -200,14 +161,6 @@ following information:
    embargoed information responsibly as described in the
    :ref:`embargoed_info_label` section.
 
-Where applicable, the project security teams also maintain an
-**E**\ specially **S**\ ensitive **S**\ takeholder (**ESS**) list. This list is
-strictly limited to those organizations that use Trusted Firmware for large
-scale deployments providing bare-metal access on multi-tenancy systems, and
-organizations that supply Trusted Firmware to such deployments. You may use
-the same email address above to register for this list but in almost all cases
-we expect the Trusted Stakeholder list to be used instead.
-
 Note, we reserve the right to deny registration or revoke membership to the
-stakeholders lists, for example if we have concerns about the confidentiality
+TS lists, for example if we have concerns about the confidentiality
 of embargoed information.
